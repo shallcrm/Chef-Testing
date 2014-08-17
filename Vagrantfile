@@ -63,9 +63,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Enable provisioning with shell scripts
   #
-    config.vm.provision "shell" do |sh|
-      sh.path = "provision.sh"
-    end
+  #   config.vm.provision "shell" do |sh|
+  #     sh.path = "provision.sh"
+  #   end
 
   # Enable provisioning with CFEngine. CFEngine Community packages are
   # automatically installed. For example, configure the host as a
@@ -98,15 +98,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # some recipes and/or roles.
   #
   # config.vm.provision "chef_solo" do |chef|
-  #   chef.cookbooks_path = "../my-recipes/cookbooks"
-  #   chef.roles_path = "../my-recipes/roles"
-  #   chef.data_bags_path = "../my-recipes/data_bags"
-  #   chef.add_recipe "vagrant_book"
+      chef.cookbooks_path = "../cookbooks"
+      chef.roles_path = "../roles"
+      chef.data_bags_path = "../data_bags"
+      chef.add_recipe "phpapp"
   #   chef.add_role "web"
   #
   #   # You may also specify custom JSON attributes:
   #   chef.json = { mysql_password: "foo" }
-  # end
+    end
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
