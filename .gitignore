@@ -5,3 +5,22 @@
 ###
 .chef/*.pem
 .chef/encrypted_data_bag_secret
+
+###
+# Ignore Vagrant-generated files for virtual machine
+###
+.vagrant
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
