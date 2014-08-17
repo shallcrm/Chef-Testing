@@ -63,9 +63,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Enable provisioning with shell scripts
   #
-  # config.vm.provision "shell" do |sh|
-  #   sh.path = "provision.sh"
-  # end
+    config.vm.provision "shell" do |sh|
+      sh.path = "provision.sh"
+    end
 
   # Enable provisioning with CFEngine. CFEngine Community packages are
   # automatically installed. For example, configure the host as a

@@ -7,6 +7,11 @@
 .chef/encrypted_data_bag_secret
 
 ###
+# Ignore Chef Solo cache directory
+###
+/chef-solo
+
+###
 # Ignore Vagrant-generated files for virtual machine
 ###
 .vagrant
